@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus - Tata Surya</title>
+    <style>
+        /* Mengatur latar belakang halaman dengan gradasi warna bertema ruang angkasa */
+        body {
+            background: linear-gradient(to bottom, #003b46 0%, #07575b 40%, #66a5ad 70%, #c4dfe6 100%);
+            background-size: cover; /* Memastikan background meliputi seluruh layar */
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Font umum untuk keterbacaan */
+            color: white; /* Teks berwarna putih untuk kontras */
+        }
+
+        /* Pengaturan judul halaman */
+        h1 {
+            color: #fff; /* Warna putih untuk judul */
+            text-align: center; /* Posisi judul di tengah halaman */
+            padding-top: 20px;
+            font-size: 3em; /* Ukuran font besar */
+        }
+
+        /* Kontainer utama yang berisi gambar dan teks */
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi halaman menjadi dua kolom */
+            gap: 40px; /* Jarak antar elemen grid */
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(10, 15, 41, 0.5); /* Warna latar belakang transparan */
+            border-radius: 15px; /* Sudut membulat */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto; /* Memusatkan konten di halaman */
+        }
+
+        /* Pengaturan gambar di kolom kiri */
+        .content-container img {
+            width: 100%; /* Gambar memenuhi seluruh lebar kolom */
+			height: 100%;
+            border-radius: 15px; /* Sudut gambar membulat */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan lembut */
+        }
+
+        /* Pengaturan teks di kolom kanan */
+        .text-container {
+            text-align: left; /* Teks rata kiri */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Posisikan teks di tengah secara vertikal */
+        }
+
+        /* Pengaturan paragraf teks */
+        p {
+            font-size: 1.2em; /* Ukuran font lebih besar */
+            line-height: 1.6; /* Jarak antar baris */
+        }
+
+        /* Tombol kembali ke halaman utama */
+        .back-btn {
+            display: block;
+            width: 200px; /* Lebar tombol */
+            padding: 10px 20px;
+            text-align: center; /* Teks di tengah tombol */
+            margin: 30px auto; /* Memusatkan tombol secara horizontal */
+            background-color: #ffcc70; /* Warna latar belakang tombol */
+            color: #000; /* Warna teks tombol */
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            border-radius: 8px; /* Sudut tombol membulat */
+            font-weight: bold; /* Teks tebal */
+            font-size: 1.2em; /* Ukuran teks tombol */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+            transition: background-color 0.3s ease; /* Efek transisi saat di-hover */
+        }
+
+        /* Efek hover pada tombol kembali */
+        .back-btn:hover {
+            background-color: #ffc107; /* Warna tombol berubah saat di-hover */
+        }
+		.navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Transparansi pada tombol */
+            border-radius: 10px;
+        }
+        .back {
+            left: 20px; /* Posisikan di kiri layar */
+        }
+        .next {
+            right: 20px; /* Posisikan di kanan layar */
+        }
+        .navigation:hover {
+            background: rgba(0, 0, 0, 0.8); /* Tombol menjadi lebih gelap saat di-hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1>Uranus</h1>
+
+    <!-- Kontainer utama untuk gambar dan teks -->
+    <div class="content-container">
+        <!-- Bagian gambar planet Uranus -->
+        <div class="image-container">
+            <img src="C:\Users\62812\Documents\tatasurya\foto\uranus.jpg" alt="Gambar Uranus"> <!-- Gambar planet Uranus -->
+        </div>
+
+        <!-- Bagian teks penjelasan tentang Uranus -->
+        <div class="text-container">
+            <p><strong>Uranus</strong> adalah planet ketujuh dari Matahari dan dikenal karena porosnya yang miring ekstrem, yang membuatnya tampak "berbaring" di sisi orbitnya. Planet ini adalah raksasa es dengan atmosfer yang sebagian besar terdiri dari hidrogen, helium, dan metana, yang memberikan warna biru kehijauan pada Uranus.</p>
+            <p>Uranus memiliki 13 cincin yang tipis dan gelap, serta 27 satelit alami yang telah diketahui. Meskipun tidak sebanyak cincin Saturnus, cincin-cincin Uranus sangat unik karena lebih gelap dan lebih samar.</p>
+            <p>Temperatur di Uranus sangat dingin, menjadikannya planet terdingin di tata surya dengan suhu yang dapat mencapai -224 derajat Celsius. Selain itu, rotasi Uranus sangat unik karena kemiringan porosnya yang hampir 98 derajat.</p>
+        </div>
+    </div>
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="C:\Users\62812\Documents\tatasurya\index.html" class="back-btn">Kembali ke Halaman Utama</a>
+	<!-- Tombol Back -->
+    <a href="saturnus.html" class="navigation back">&lt;</a>
+
+    <!-- Tombol Next -->
+    <a href="neptunus.html" class="navigation next">&gt;</a>
+</body>
+</html>

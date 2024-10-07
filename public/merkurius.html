@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merkurius - Tata Surya</title>
+    <style>
+        body {
+			background: linear-gradient(to bottom, #333333 0%, #666666 30%, #999999 60%, #cccccc 80%, #b0e0e6 100%);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 3em;
+        }
+
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(10, 15, 41, 0.3); /* Transparansi konten dengan warna biru tua */
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content-container img {
+            width: 100%;
+			height: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-container {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            display: block;
+            width: 200px;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 30px auto;
+            background-color: #ffcc70;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ffc107; /* Warna hover untuk tombol kembali */
+        }
+		.navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Transparansi pada tombol */
+            border-radius: 10px;
+        }
+        .back {
+            left: 20px; /* Posisikan di kiri layar */
+        }
+        .next {
+            right: 20px; /* Posisikan di kanan layar */
+        }
+        .navigation:hover {
+            background: rgba(0, 0, 0, 0.8); /* Tombol menjadi lebih gelap saat di-hover */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Merkurius</h1>
+    <div class="content-container">
+        <!-- Bagian gambar -->
+        <div class="image-container">
+            <img src="C:\Users\62812\Documents\tatasurya\foto\merkurius.jpg" alt="Gambar Merkurius">
+        </div>
+
+        <!-- Bagian teks -->
+        <div class="text-container">
+            <p><strong>Merkurius</strong> adalah planet terkecil dan terdekat dengan Matahari dalam Tata Surya. Dengan diameter sekitar 4.880 kilometer, Merkurius hampir tidak memiliki atmosfer, sehingga permukaannya sangat panas di siang hari dan sangat dingin di malam hari.</p>
+            <p>Merkurius memiliki permukaan yang dipenuhi oleh kawah-kawah akibat benturan meteor. Satu hari di Merkurius (waktu yang dibutuhkan untuk satu rotasi penuh pada porosnya) berlangsung sekitar 59 hari Bumi, sedangkan satu tahun di Merkurius (waktu yang dibutuhkan untuk mengelilingi Matahari) hanya 88 hari Bumi.</p>
+            <p>Planet ini juga memiliki orbit yang sangat eksentrik, yang berarti jarak antara Merkurius dan Matahari sangat bervariasi sepanjang orbitnya. Suhu di permukaannya dapat mencapai 430°C pada siang hari dan turun hingga -180°C pada malam hari.</p>
+        </div>
+    </div>
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="C:\Users\62812\Documents\tatasurya\index.html" class="back-btn">Kembali ke Halaman Utama</a>
+	<!-- Tombol Back -->
+    <a href="matahari.html" class="navigation back">&lt;</a>
+
+    <!-- Tombol Next -->
+    <a href="venus.html" class="navigation next">&gt;</a>
+</body>
+</html>

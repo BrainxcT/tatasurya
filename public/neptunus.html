@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptunus - Tata Surya</title>
+    <style>
+        /* Mengatur latar belakang halaman dengan gradasi ruang angkasa */
+        body {
+            background: linear-gradient(to bottom, #000428 0%, #004e92 40%, #0074d9 70%, #00d4ff 100%);
+            background-size: cover; /* Memastikan latar belakang mencakup seluruh halaman */
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Font yang mudah dibaca */
+            color: white; /* Teks berwarna putih untuk kontras dengan latar belakang */
+        }
+
+        /* Pengaturan judul halaman */
+        h1 {
+            color: #fff; /* Warna putih untuk judul */
+            text-align: center; /* Menempatkan judul di tengah */
+            padding-top: 20px;
+            font-size: 3em; /* Ukuran font besar */
+        }
+
+        /* Kontainer utama untuk gambar dan teks */
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi halaman menjadi dua kolom */
+            gap: 40px; /* Jarak antar elemen grid */
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(10, 15, 41, 0.5); /* Latar belakang transparan */
+            border-radius: 15px; /* Sudut kontainer membulat */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan lembut */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto; /* Memusatkan konten */
+        }
+
+        /* Pengaturan gambar Neptunus di kolom kiri */
+        .content-container img {
+            width: 100%; /* Gambar memenuhi seluruh lebar kolom */
+			height: 100%;
+            border-radius: 15px; /* Sudut gambar membulat */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+
+        /* Kontainer teks di kolom kanan */
+        .text-container {
+            text-align: left; /* Teks rata kiri */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Menempatkan teks di tengah secara vertikal */
+        }
+
+        /* Pengaturan paragraf teks */
+        p {
+            font-size: 1.2em; /* Ukuran font lebih besar */
+            line-height: 1.6; /* Jarak antar baris */
+        }
+
+        /* Tombol untuk kembali ke halaman utama */
+        .back-btn {
+            display: block;
+            width: 200px; /* Lebar tombol */
+            padding: 10px 20px;
+            text-align: center; /* Teks di tengah tombol */
+            margin: 30px auto; /* Memusatkan tombol secara horizontal */
+            background-color: #ffcc70; /* Warna latar belakang tombol */
+            color: #000; /* Warna teks hitam */
+            text-decoration: none; /* Menghapus garis bawah pada link */
+            border-radius: 8px; /* Sudut tombol membulat */
+            font-weight: bold; /* Teks tebal */
+            font-size: 1.2em; /* Ukuran font tombol */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan lembut */
+            transition: background-color 0.3s ease; /* Efek transisi saat di-hover */
+        }
+
+        /* Efek hover saat mouse berada di atas tombol */
+        .back-btn:hover {
+            background-color: #ffc107; /* Warna tombol berubah saat di-hover */
+        }
+		.navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Transparansi pada tombol */
+            border-radius: 10px;
+        }
+        .back {
+            left: 20px; /* Posisikan di kiri layar */
+        }
+        .next {
+            right: 20px; /* Posisikan di kanan layar */
+        }
+        .navigation:hover {
+            background: rgba(0, 0, 0, 0.8); /* Tombol menjadi lebih gelap saat di-hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1>Neptunus</h1>
+
+    <!-- Kontainer utama untuk gambar dan teks -->
+    <div class="content-container">
+        <!-- Bagian gambar planet Neptunus -->
+        <div class="image-container">
+            <img src="C:\Users\62812\Documents\tatasurya\foto\neptunus.jpg" alt="Gambar Neptunus"> <!-- Gambar planet Neptunus -->
+        </div>
+
+        <!-- Bagian teks penjelasan tentang Neptunus -->
+        <div class="text-container">
+            <p><strong>Neptunus</strong> adalah planet kedelapan dari Matahari dan merupakan raksasa es yang memiliki warna biru yang intens, disebabkan oleh metana di atmosfernya. Planet ini adalah yang terjauh dari Matahari, dan butuh sekitar 165 tahun Bumi untuk menyelesaikan satu orbit penuh di sekitar Matahari.</p>
+            <p>Neptunus dikenal dengan angin yang sangat kuat, dengan kecepatan angin yang bisa mencapai 2.000 km/jam, menjadikannya planet dengan angin terkuat di tata surya. Atmosfernya terutama terdiri dari hidrogen, helium, dan sejumlah kecil metana.</p>
+            <p>Neptunus memiliki 14 satelit alami, dengan Triton sebagai yang terbesar. Triton memiliki orbit retrograde, yang berarti berputar dalam arah yang berlawanan dengan rotasi Neptunus, dan dipercaya sebagai objek sabuk Kuiper yang ditangkap oleh gravitasi Neptunus.</p>
+        </div>
+    </div>
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="C:\Users\62812\Documents\tatasurya\index.html" class="back-btn">Kembali ke Halaman Utama</a>
+	<!-- Tombol Back -->
+    <a href="uranus.html" class="navigation back">&lt;</a>
+
+</body>
+</html>

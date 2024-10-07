@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturnus - Tata Surya</title>
+    <style>
+        /* Mengatur latar belakang halaman dengan gradasi bertema ruang angkasa */
+        body {
+            background: linear-gradient(to bottom, #4b3621 0%, #d2a679 40%, #f7d794 70%, #fceabb 100%);
+            background-size: cover; /* Memastikan background meliputi seluruh layar */
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Menggunakan font umum dan mudah dibaca */
+            color: white; /* Teks putih untuk kontras yang jelas dengan background */
+        }
+
+        /* Pengaturan judul halaman */
+        h1 {
+            color: #fff; /* Warna putih untuk judul */
+            text-align: center; /* Judul di tengah halaman */
+            padding-top: 20px;
+            font-size: 3em; /* Ukuran font besar */
+        }
+
+        /* Kontainer utama untuk gambar dan teks */
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi halaman menjadi dua kolom */
+            gap: 40px; /* Jarak antar elemen grid */
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(10, 15, 41, 0.5); /* Background transparan biru tua */
+            border-radius: 15px; /* Sudut kontainer membulat */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto; /* Memusatkan konten */
+        }
+
+        /* Mengatur gambar planet Saturnus */
+        .content-container img {
+            width: 100%; /* Gambar menempati penuh area kolomnya */
+			height: 100%;
+            border-radius: 15px; /* Sudut gambar membulat */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan lembut */
+        }
+
+        /* Kontainer teks di sebelah gambar */
+        .text-container {
+            text-align: left; /* Teks rata kiri */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Menyusun teks di tengah secara vertikal */
+        }
+
+        /* Mengatur paragraf di dalam kontainer teks */
+        p {
+            font-size: 1.2em; /* Ukuran font lebih besar */
+            line-height: 1.6; /* Jarak antar baris teks */
+        }
+
+        /* Tombol untuk kembali ke halaman utama */
+        .back-btn {
+            display: block;
+            width: 200px; /* Lebar tombol */
+            padding: 10px 20px;
+            text-align: center; /* Teks di tengah tombol */
+            margin: 30px auto; /* Memusatkan tombol secara horizontal */
+            background-color: #ffcc70; /* Warna latar tombol */
+            color: #000; /* Warna teks hitam */
+            text-decoration: none; /* Menghapus garis bawah link */
+            border-radius: 8px; /* Sudut tombol membulat */
+            font-weight: bold; /* Teks tebal */
+            font-size: 1.2em; /* Ukuran font tombol */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan lembut untuk efek 3D */
+            transition: background-color 0.3s ease; /* Efek transisi saat di-hover */
+        }
+
+        /* Efek hover saat mouse berada di atas tombol */
+        .back-btn:hover {
+            background-color: #ffc107; /* Warna tombol berubah saat di-hover */
+        }
+		.navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Transparansi pada tombol */
+            border-radius: 10px;
+        }
+        .back {
+            left: 20px; /* Posisikan di kiri layar */
+        }
+        .next {
+            right: 20px; /* Posisikan di kanan layar */
+        }
+        .navigation:hover {
+            background: rgba(0, 0, 0, 0.8); /* Tombol menjadi lebih gelap saat di-hover */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1>Saturnus</h1>
+
+    <!-- Kontainer utama untuk gambar dan teks -->
+    <div class="content-container">
+        <!-- Bagian gambar planet Saturnus -->
+        <div class="image-container">
+            <img src="C:\Users\62812\Documents\tatasurya\foto\saturnus.jpg" alt="Gambar Saturnus"> <!-- Gambar Saturnus, pastikan file tersedia -->
+        </div>
+
+        <!-- Bagian teks penjelasan tentang Saturnus -->
+        <div class="text-container">
+            <p><strong>Saturnus</strong> adalah planet terbesar kedua di tata surya dan dikenal dengan cincin yang indah dan jelas terlihat. Cincin-cincin Saturnus terdiri dari partikel es dan debu yang berputar mengelilingi planet ini.</p>
+            <p>Saturnus adalah planet gas raksasa seperti Jupiter, yang sebagian besar terdiri dari hidrogen dan helium. Atmosfer Saturnus juga sangat dinamis dengan angin kencang yang mencapai kecepatan hingga 1.800 km/jam.</p>
+            <p>Saturnus memiliki 83 satelit yang diketahui, dengan Titan sebagai satelit terbesar. Titan bahkan lebih besar dari planet Merkurius dan memiliki atmosfer yang lebih tebal dari Bumi, membuatnya menjadi objek studi menarik bagi para ilmuwan.</p>
+        </div>
+    </div>
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="C:\Users\62812\Documents\tatasurya\index.html" class="back-btn">Kembali ke Halaman Utama</a>
+	<!-- Tombol Back -->
+    <a href="jupiter.html" class="navigation back">&lt;</a>
+
+    <!-- Tombol Next -->
+    <a href="uranus.html" class="navigation next">&gt;</a>
+</body>
+</html>

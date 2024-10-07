@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus - Tata Surya</title>
+    <style>
+        /* Pengaturan dasar untuk body: latar belakang gradasi yang sama seperti halaman lain */
+        body {
+            background: linear-gradient(to bottom, #663300 0%, #cc6600 40%, #ff9933 70%, #ffd700 100%);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white; /* Teks berwarna putih untuk kontras dengan latar belakang */
+        }
+
+        /* Pengaturan judul halaman */
+        h1 {
+            color: #fff; /* Warna putih untuk judul */
+            text-align: center;
+            padding-top: 20px;
+            font-size: 3em; /* Ukuran font yang besar untuk judul */
+        }
+
+        /* Kontainer utama untuk gambar dan teks, menggunakan grid */
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 kolom, satu untuk gambar dan satu untuk teks */
+            gap: 40px; /* Jarak antar elemen di grid */
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(10, 15, 41, 0.5); /* Transparansi pada konten dengan warna biru tua */
+            border-radius: 15px; /* Sudut bulat pada kontainer */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut di sekitar kontainer */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto; /* Pusatkan konten di layar */
+        }
+
+        /* Pengaturan gambar di dalam kontainer */
+        .content-container img {
+            width: 100%; /* Gambar memenuhi seluruh area grid */
+			height: 100%;
+            border-radius: 15px; /* Sudut gambar dibulatkan */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Berikan bayangan pada gambar */
+        }
+
+        /* Kontainer teks */
+        .text-container {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Posisikan teks di tengah secara vertikal */
+        }
+
+        /* Pengaturan paragraf dalam kontainer teks */
+        p {
+            font-size: 1.2em; /* Ukuran font sedikit lebih besar dari default untuk keterbacaan */
+            line-height: 1.6; /* Jarak antar baris teks */
+        }
+
+        /* Tombol kembali ke halaman utama */
+        .back-btn {
+            display: block;
+            width: 200px;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 30px auto; /* Pusatkan tombol secara horizontal */
+            background-color: #ffcc70; /* Warna latar belakang tombol */
+            color: #000; /* Warna teks tombol */
+            text-decoration: none; /* Hapus garis bawah pada teks link */
+            border-radius: 8px; /* Buat tombol dengan sudut bulat */
+            font-weight: bold;
+            font-size: 1.2em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Berikan efek bayangan pada tombol */
+            transition: background-color 0.3s ease; /* Efek transisi warna saat hover */
+        }
+
+        /* Efek hover untuk tombol */
+        .back-btn:hover {
+            background-color: #ffc107; /* Ubah warna tombol saat mouse berada di atasnya */
+        }
+		.navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Transparansi pada tombol */
+            border-radius: 10px;
+        }
+        .back {
+            left: 20px; /* Posisikan di kiri layar */
+        }
+        .next {
+            right: 20px; /* Posisikan di kanan layar */
+        }
+        .navigation:hover {
+            background: rgba(0, 0, 0, 0.8); /* Tombol menjadi lebih gelap saat di-hover */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1>Venus</h1>
+
+    <!-- Kontainer utama untuk gambar dan teks -->
+    <div class="content-container">
+        <!-- Bagian gambar planet Venus -->
+        <div class="image-container">
+            <img src="C:\Users\62812\Documents\tatasurya\foto\venus.jpg" alt="Gambar Venus"> <!-- Gambar Venus, pastikan file gambar tersedia -->
+        </div>
+
+        <!-- Bagian teks penjelasan tentang Venus -->
+        <div class="text-container">
+            <p><strong>Venus</strong> adalah planet kedua dari Matahari dan dikenal sebagai planet kembaran Bumi karena ukurannya yang hampir sama. Namun, Venus memiliki atmosfer yang sangat tebal dan beracun yang sebagian besar terdiri dari karbon dioksida, dengan awan tebal asam sulfat.</p>
+            <p>Planet ini memiliki suhu permukaan yang sangat tinggi, mencapai sekitar 465°C, menjadikannya planet terpanas di Tata Surya. Atmosfer Venus memerangkap panas melalui efek rumah kaca yang ekstrim.</p>
+            <p>Venus memiliki periode rotasi yang sangat lambat dan berlawanan arah, yang berarti Venus berputar dari timur ke barat, berbeda dengan kebanyakan planet lainnya. Satu hari di Venus setara dengan sekitar 243 hari Bumi.</p>
+        </div>
+    </div>
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="C:\Users\62812\Documents\tatasurya\index.html" class="back-btn">Kembali ke Halaman Utama</a>
+		<!-- Tombol Back -->
+    <a href="merkurius.html" class="navigation back">&lt;</a>
+
+    <!-- Tombol Next -->
+    <a href="bumi.html" class="navigation next">&gt;</a>
+</body>
+</html>

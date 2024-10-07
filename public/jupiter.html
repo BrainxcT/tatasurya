@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter - Tata Surya</title>
+    <style>
+        /* Mengatur latar belakang halaman dengan gradasi bertema ruang angkasa */
+        body {
+            background: linear-gradient(to bottom, #2e1a47 0%, #704e2e 30%, #d28b47 60%, #f4d160 100%);
+            background-size: cover; /* Memastikan gambar latar mencakup seluruh layar */
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Font umum dan mudah dibaca */
+            color: white; /* Teks berwarna putih untuk kontras dengan latar belakang */
+        }
+
+        /* Pengaturan judul halaman */
+        h1 {
+            color: #fff; /* Warna putih untuk judul */
+            text-align: center; /* Posisikan judul di tengah halaman */
+            padding-top: 20px;
+            font-size: 3em; /* Ukuran font besar untuk judul */
+        }
+
+        /* Kontainer utama untuk menempatkan gambar dan teks dalam grid */
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi halaman menjadi dua kolom */
+            gap: 40px; /* Jarak antara elemen-elemen dalam grid */
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(10, 15, 41, 0.5); /* Transparansi biru tua */
+            border-radius: 15px; /* Membulatkan sudut kontainer */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut pada kontainer */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto; /* Memusatkan konten di tengah halaman */
+        }
+
+        /* Pengaturan gambar di dalam grid */
+        .content-container img {
+            width: 100%; /* Gambar mengisi penuh area kolomnya */
+			height: 100%;
+            border-radius: 15px; /* Membulatkan sudut gambar */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut untuk efek visual */
+        }
+
+        /* Pengaturan teks di dalam kontainer */
+        .text-container {
+            text-align: left; /* Teks rata kiri */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Menempatkan teks di tengah vertikal */
+        }
+
+        /* Pengaturan paragraf dalam kontainer teks */
+        p {
+            font-size: 1.2em; /* Ukuran font yang sedikit lebih besar untuk keterbacaan */
+            line-height: 1.6; /* Jarak antar baris teks untuk kenyamanan membaca */
+        }
+
+        /* Tombol kembali ke halaman utama */
+        .back-btn {
+            display: block;
+            width: 200px; /* Lebar tombol */
+            padding: 10px 20px;
+            text-align: center; /* Teks dalam tombol diatur rata tengah */
+            margin: 30px auto; /* Memusatkan tombol secara horizontal */
+            background-color: #ffcc70; /* Warna latar tombol */
+            color: #000; /* Warna teks tombol */
+            text-decoration: none; /* Menghapus garis bawah link */
+            border-radius: 8px; /* Membulatkan sudut tombol */
+            font-weight: bold; /* Teks lebih tebal */
+            font-size: 1.2em; /* Ukuran teks tombol */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan pada tombol */
+            transition: background-color 0.3s ease; /* Efek transisi saat tombol di-hover */
+        }
+
+        /* Efek hover untuk tombol kembali */
+        .back-btn:hover {
+            background-color: #ffc107; /* Ubah warna tombol saat di-hover */
+        }
+		.navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Transparansi pada tombol */
+            border-radius: 10px;
+        }
+        .back {
+            left: 20px; /* Posisikan di kiri layar */
+        }
+        .next {
+            right: 20px; /* Posisikan di kanan layar */
+        }
+        .navigation:hover {
+            background: rgba(0, 0, 0, 0.8); /* Tombol menjadi lebih gelap saat di-hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1>Jupiter</h1>
+
+    <!-- Kontainer utama untuk gambar dan teks -->
+    <div class="content-container">
+        <!-- Bagian gambar planet Jupiter -->
+        <div class="image-container">
+            <img src="C:\Users\62812\Documents\tatasurya\foto\jupiter.jpg" alt="Gambar Jupiter"> <!-- Gambar planet Jupiter, pastikan file tersedia -->
+        </div>
+
+        <!-- Bagian teks penjelasan tentang Jupiter -->
+        <div class="text-container">
+            <p><strong>Jupiter</strong> adalah planet terbesar dalam tata surya, dengan diameter lebih dari 11 kali lipat diameter Bumi. Planet ini terkenal dengan Bintik Merah Besar, badai raksasa yang sudah berlangsung selama ratusan tahun.</p>
+            <p>Jupiter memiliki atmosfer yang sangat tebal yang sebagian besar terdiri dari hidrogen dan helium, mirip dengan komposisi Matahari. Planet ini tidak memiliki permukaan padat dan merupakan planet gas raksasa.</p>
+            <p>Jupiter memiliki 79 satelit yang diketahui, termasuk Ganymede, satelit terbesar di tata surya. Gaya gravitasi Jupiter yang sangat kuat juga mempengaruhi orbit satelit dan komet di sekitarnya, membuat planet ini penting dalam menjaga kestabilan tata surya.</p>
+        </div>
+    </div>
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="C:\Users\62812\Documents\tatasurya\index.html" class="back-btn">Kembali ke Halaman Utama</a>
+	<!-- Tombol Back -->
+    <a href="mars.html" class="navigation back">&lt;</a>
+
+    <!-- Tombol Next -->
+    <a href="saturnus.html" class="navigation next">&gt;</a>
+</body>
+</html>

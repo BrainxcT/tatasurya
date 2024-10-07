@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumi - Tata Surya</title>
+    <style>
+        /* Mengatur background dengan gradasi untuk tema ruang angkasa */
+        body {
+            background: linear-gradient(to bottom, #00416a 0%, #2c7873 40%, #55a630 70%, #9be2e6 100%);
+            background-size: cover; /* Memastikan background mencakup seluruh layar */
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Font yang mudah dibaca */
+            color: white; /* Warna teks putih untuk kontras */
+        }
+
+        /* Pengaturan judul (heading) di halaman */
+        h1 {
+            color: #fff; /* Warna putih untuk judul */
+            text-align: center; /* Posisikan judul di tengah */
+            padding-top: 20px;
+            font-size: 3em; /* Ukuran font besar untuk judul */
+        }
+
+        /* Kontainer utama yang membagi halaman menjadi dua kolom: gambar dan teks */
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi area menjadi dua kolom */
+            gap: 40px; /* Jarak antar elemen di grid */
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(10, 15, 41, 0.5); /* Transparansi konten dengan warna biru tua */
+            border-radius: 15px; /* Membulatkan sudut kontainer */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan halus untuk memberikan efek kedalaman */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto; /* Memusatkan konten di tengah halaman */
+        }
+
+        /* Pengaturan gambar di dalam grid */
+        .content-container img {
+            width: 100%; /* Gambar mengisi penuh area kolom */
+			height: 100%;
+            border-radius: 15px; /* Membulatkan sudut gambar */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan halus pada gambar */
+        }
+
+        /* Kontainer untuk teks penjelasan */
+        .text-container {
+            text-align: left; /* Teks rata kiri */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Posisikan teks di tengah secara vertikal */
+        }
+
+        /* Pengaturan paragraf dalam kontainer teks */
+        p {
+            font-size: 1.2em; /* Ukuran font yang lebih besar untuk keterbacaan */
+            line-height: 1.6; /* Jarak antar baris teks */
+        }
+
+        /* Tombol untuk kembali ke halaman utama */
+        .back-btn {
+            display: block;
+            width: 200px; /* Lebar tombol */
+            padding: 10px 20px;
+            text-align: center; /* Teks tombol rata tengah */
+            margin: 30px auto; /* Memusatkan tombol secara horizontal */
+            background-color: #ffcc70; /* Warna latar belakang tombol */
+            color: #000; /* Warna teks tombol */
+            text-decoration: none; /* Menghapus garis bawah pada link */
+            border-radius: 8px; /* Membulatkan sudut tombol */
+            font-weight: bold; /* Teks lebih tebal */
+            font-size: 1.2em; /* Ukuran teks pada tombol */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan pada tombol */
+            transition: background-color 0.3s ease; /* Efek transisi warna saat hover */
+        }
+
+        /* Efek hover pada tombol kembali */
+        .back-btn:hover {
+            background-color: #ffc107; /* Warna tombol berubah saat diarahkan kursor */
+        }
+		.navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Transparansi pada tombol */
+            border-radius: 10px;
+        }
+        .back {
+            left: 20px; /* Posisikan di kiri layar */
+        }
+        .next {
+            right: 20px; /* Posisikan di kanan layar */
+        }
+        .navigation:hover {
+            background: rgba(0, 0, 0, 0.8); /* Tombol menjadi lebih gelap saat di-hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1>Bumi</h1>
+
+    <!-- Kontainer utama untuk gambar dan teks -->
+    <div class="content-container">
+        <!-- Bagian gambar planet Bumi -->
+        <div class="image-container">
+            <img src="C:\Users\62812\Documents\tatasurya\foto\bumi.jpg" alt="Gambar Bumi"> <!-- Gambar planet Bumi, pastikan file tersedia -->
+        </div>
+
+        <!-- Bagian teks penjelasan tentang Bumi -->
+        <div class="text-container">
+            <p><strong>Bumi</strong> adalah planet ketiga dari Matahari dan satu-satunya planet yang diketahui memiliki kehidupan. Bumi memiliki atmosfer yang terdiri dari nitrogen, oksigen, dan sejumlah kecil gas lain yang sangat penting bagi kehidupan manusia, tumbuhan, dan hewan.</p>
+            <p>Bumi memiliki luas permukaan sekitar 510,1 juta kilometer persegi, dengan 71% dari permukaannya terdiri dari air. Atmosfer Bumi juga berperan penting dalam melindungi kehidupan dari radiasi berbahaya dari Matahari dan menjaga suhu permukaan yang sesuai untuk kehidupan.</p>
+            <p>Bumi juga memiliki medan magnet yang kuat, yang disebut magnetosfer, yang melindunginya dari partikel bermuatan yang berasal dari Matahari. Planet ini berputar pada porosnya setiap 24 jam dan mengelilingi Matahari setiap 365,25 hari.</p>
+        </div>
+    </div>
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="C:\Users\62812\Documents\tatasurya\index.html" class="back-btn">Kembali ke Halaman Utama</a>
+	<!-- Tombol Back -->
+    <a href="venus.html" class="navigation back">&lt;</a>
+
+    <!-- Tombol Next -->
+    <a href="mars.html" class="navigation next">&gt;</a>
+</body>
+</html>

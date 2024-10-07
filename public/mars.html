@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars - Tata Surya</title>
+    <style>
+        /* Mengatur latar belakang halaman dengan gradasi bertema luar angkasa */
+        body {
+            background: linear-gradient(to bottom, #3f0d12 0%, #a71d31 40%, #d35d6e 70%, #ffcccb 100%);
+            background-size: cover; /* Memastikan gambar latar belakang mencakup seluruh layar */
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Font yang mudah dibaca */
+            color: white; /* Warna teks putih untuk kontras dengan latar belakang */
+        }
+
+        /* Pengaturan judul halaman */
+        h1 {
+            color: #fff; /* Warna putih untuk judul */
+            text-align: center; /* Posisi judul di tengah halaman */
+            padding-top: 20px;
+            font-size: 3em; /* Ukuran font besar untuk judul */
+        }
+
+        /* Kontainer utama untuk menempatkan gambar dan teks dalam grid */
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi halaman menjadi dua kolom: satu untuk gambar, satu untuk teks */
+            gap: 40px; /* Jarak antar elemen dalam grid */
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(10, 15, 41, 0.5); /* Warna biru tua transparan untuk background konten */
+            border-radius: 15px; /* Membulatkan sudut kontainer */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut pada kontainer */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto; /* Memusatkan konten di tengah halaman */
+        }
+
+        /* Pengaturan gambar di dalam grid */
+        .content-container img {
+            width: 100%; /* Gambar mengisi seluruh kolomnya */
+			height: 100%;
+            border-radius: 15px; /* Membulatkan sudut gambar */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut untuk efek 3D */
+        }
+
+        /* Kontainer teks */
+        .text-container {
+            text-align: left; /* Teks rata kiri */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Posisikan teks di tengah secara vertikal */
+        }
+
+        /* Pengaturan paragraf di dalam teks kontainer */
+        p {
+            font-size: 1.2em; /* Ukuran font yang sedikit lebih besar untuk keterbacaan */
+            line-height: 1.6; /* Jarak antar baris teks yang nyaman */
+        }
+
+        /* Tombol kembali ke halaman utama */
+        .back-btn {
+            display: block;
+            width: 200px; /* Lebar tombol */
+            padding: 10px 20px;
+            text-align: center; /* Teks tombol berada di tengah */
+            margin: 30px auto; /* Memusatkan tombol di tengah halaman */
+            background-color: #ffcc70; /* Warna latar tombol */
+            color: #000; /* Warna teks hitam pada tombol */
+            text-decoration: none; /* Menghilangkan garis bawah pada teks */
+            border-radius: 8px; /* Membulatkan sudut tombol */
+            font-weight: bold; /* Membuat teks lebih tebal */
+            font-size: 1.2em; /* Ukuran teks pada tombol */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan pada tombol */
+            transition: background-color 0.3s ease; /* Efek transisi saat tombol di-hover */
+        }
+
+        /* Efek hover pada tombol */
+        .back-btn:hover {
+            background-color: #ffc107; /* Ubah warna tombol saat mouse berada di atasnya */
+        }
+		.navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Transparansi pada tombol */
+            border-radius: 10px;
+        }
+        .back {
+            left: 20px; /* Posisikan di kiri layar */
+        }
+        .next {
+            right: 20px; /* Posisikan di kanan layar */
+        }
+        .navigation:hover {
+            background: rgba(0, 0, 0, 0.8); /* Tombol menjadi lebih gelap saat di-hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Judul halaman -->
+    <h1>Mars</h1>
+
+    <!-- Kontainer utama untuk gambar dan teks -->
+    <div class="content-container">
+        <!-- Bagian gambar planet Mars -->
+        <div class="image-container">
+            <img src="C:\Users\62812\Documents\tatasurya\foto\mars.jpg" alt="Gambar Mars"> <!-- Gambar planet Mars, pastikan file gambar tersedia -->
+        </div>
+
+        <!-- Bagian teks penjelasan tentang Mars -->
+        <div class="text-container">
+            <p><strong>Mars</strong> adalah planet keempat dari Matahari dan sering disebut sebagai "Planet Merah" karena warna permukaannya yang kemerahan, disebabkan oleh kandungan besi oksida yang melimpah.</p>
+            <p>Mars memiliki dua satelit alami yang kecil dan tidak beraturan bentuknya, yaitu Phobos dan Deimos. Suhu di permukaan Mars sangat bervariasi, namun cenderung dingin dengan rata-rata sekitar -60°C. Atmosfer Mars sangat tipis dan sebagian besar terdiri dari karbon dioksida.</p>
+            <p>Walaupun kecil, Mars sering menjadi fokus penelitian karena diduga memiliki air dalam bentuk es di bawah permukaannya. Para ilmuwan juga tertarik dengan kemungkinan bahwa planet ini mungkin pernah memiliki kondisi yang mendukung kehidupan mikroba di masa lalu.</p>
+        </div>
+    </div>
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="C:\Users\62812\Documents\tatasurya\index.html" class="back-btn">Kembali ke Halaman Utama</a>
+	<!-- Tombol Back -->
+    <a href="bumi.html" class="navigation back">&lt;</a>
+
+    <!-- Tombol Next -->
+    <a href="jupiter.html" class="navigation next">&gt;</a>
+</body>
+</html>
